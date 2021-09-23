@@ -4,14 +4,18 @@ Converts a python dictionary to a class object.
 ## Basic Usage
 
 ```
-  data = dict(
+from dictclass import DictClass
+
+data = dict(
        name='millamo',
        ref=49,
        height=145
        ) 
 data_class = DictClass(data)
+
 ```
 
+Access the key bindings with the dot notation.
 
 ```
         
@@ -20,10 +24,12 @@ data_class = DictClass(data)
 
 ```
 
-        """
 
-            Nested Data:
-            data = dict(
+ ###  Handling Nested Data
+    
+ ```
+ 
+    data = dict(
                 name='millamo',
                 ref=49,
                 height=145
@@ -31,13 +37,10 @@ data_class = DictClass(data)
             )
             data_class = DictClass(data)
 
-         """
- 
-         """
-
-            data_class.size
+   ```
+   
+   ```
+         data_class.size
             {"width":54,"depth":478,"length":1254,"typeof":"rod"}
 
-         """
-
-   
+   ```
