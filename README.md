@@ -53,6 +53,15 @@ Prefered method to access nested data
 dict_class.size.get('width', None)
 54
  ```
+ And Retrieve the original dataset 
+
+ ```
+ dict_class.to_dict()
+
+ {...}
+
+ ```
+
  
  ### Installation:
  

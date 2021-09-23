@@ -31,12 +31,12 @@ class DictClass(object):
         for key in data:
             setattr(self, key, data[key])  
 
-    def to_primitive(self):
+    def to_dict(self):
         return self.__dict__     
     
     def __repr__(self):
         """"""
         attrs = str([x for x in self.__dict__])
-        return "<dict2obj: %s="">" % attrs
+        return f"<DictClass: {attrs}>" 
 
 
