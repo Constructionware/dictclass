@@ -2,6 +2,7 @@
 Converts a python dictionary to a class object.
 
 ## Basic Usage
+
 """
         data = dict(
         name='millamo',
@@ -11,9 +12,13 @@ Converts a python dictionary to a class object.
     data_class = DictClass(data)
 
 """
+
+"""
     data_class.name
     millamo
     
+"""
+
 """
 
     Nested Data:
@@ -26,7 +31,12 @@ Converts a python dictionary to a class object.
     data_class = DictClass(data)
     
  """
+ 
+ """
+ 
     data_class.size
     {"width":54,"depth":478,"length":1254,"typeof":"rod"}
+    
+ """
 
    
