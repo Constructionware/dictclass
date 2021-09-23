@@ -3,22 +3,22 @@ Converts a python dictionary to a class object.
 
 ## Basic Usage
 
-        """
+"""
                 data = dict(
                 name='millamo',
                 ref=49,
                 height=145
             ) 
             data_class = DictClass(data)
+"""
 
-        """
 
-        """
+"""
         
             data_class.name
             millamo
 
-        """
+"""
 
         """
 
