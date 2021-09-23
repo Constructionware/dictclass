@@ -21,13 +21,7 @@ if sys.argv[-1] == "publish":
     os.system("python setup.py sdist bdist_wheel upload")
     sys.exit()
 
-required = [
-   
-    "StringGenerator"
-   
-    
-]
-
+required = []
 
 # https://pypi.python.org/pypi/stdeb/0.8.5#quickstart-2-just-tell-me-the-fastest-way-to-make-a-deb
 class DebCommand(Command):
@@ -105,7 +99,7 @@ setup(
     author_email="csware.io@gmail.com",
     url="https://github.com/Constructionware/dictclass",
     packages=find_packages(exclude=["tests"]),
-    #entry_points={"console_scripts": ["aspiredb=aspiredb.cli:cli"]},
+    #entry_points={"console_scripts": ["dictclass=dictclass.cli:cli"]},
     package_data={"dictclass": ["py.typed"]},
     python_requires=">=3.9",
     setup_requires=[],    
